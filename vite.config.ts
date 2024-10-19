@@ -11,4 +11,12 @@ export default defineConfig({
   build: {
     sourcemap: true,
   },
+  resolve: {
+    alias: {
+      src: '/src',
+      core: '/src/core',
+      common: '/src/common',
+      pages: '/src/pages',
+    },
+  },
 });

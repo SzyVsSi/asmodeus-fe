@@ -1,5 +1,5 @@
-import type { FetchService } from '../fetchService';
-import type { ApiGameSession } from '../../types/gameSession';
+import type { FetchService } from '../services/fetchService';
+import type { ApiGameSession } from './types';
 
 export class GameSessionsApi {
   constructor(private fetchService: FetchService) {}

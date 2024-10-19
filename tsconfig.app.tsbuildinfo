@@ -1,1 +1,1 @@
-{"root":["./src/App.tsx","./src/main.tsx","./src/vite-env.d.ts"],"version":"5.6.3"}
+{"root":["./src/main.tsx","./src/vite-env.d.ts","./src/common/components/layout/Layout.tsx","./src/core/api/gameSessionsApi.ts","./src/core/api/helpers.ts","./src/core/api/types.ts","./src/core/modules/createGameSessionsModule.ts","./src/core/modules/gameSession.ts","./src/core/router/router.tsx","./src/core/router/routes.ts","./src/core/services/apiInitializer.ts","./src/core/services/fetchService.ts","./src/pages/home/index.tsx"],"version":"5.6.3"}
