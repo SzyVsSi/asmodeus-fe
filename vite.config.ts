@@ -5,4 +5,10 @@ import react from '@vitejs/plugin-react-swc';
 export default defineConfig({
   plugins: [react()],
   base: '/asmodeus-fe',
+  server: {
+    port: 3000,
+  },
+  build: {
+    sourcemap: true,
+  },
 });
