@@ -1,6 +1,7 @@
-import { useQuery } from '@tanstack/react-query';
+import { useMutation, useQuery } from '@tanstack/react-query';
 import type { GameSessionsApi } from '../api/gameSessionsApi';
 import { mapGameSessionsToGameSessionEntity } from '../api/helpers';
+import type { ApiVerifyCodeResponse } from '../api/types';
 
 export const createGameSessionsModule = ({
   gameSessionsApi,
@@ -24,7 +25,21 @@ export const createGameSessionsModule = ({
     };
   };
 
+  const useVerifyCode = () => {
+    // biome-ignore lint/suspicious/noExplicitAny: <explanation>
+    const {mutateAsync, error, isPending} = useMutation<ApiVerifyCodeResponse, any, string>({
+      mutationFn: (token) => gameSessionsApi.checkValidToken(token)
+    });
+
+    return {
+      verifyCode: mutateAsync,
+      error,
+      isPending
+    }
+  }
+
   return {
     useGetAllGameSessions,
+    useVerifyCode
   };
 };

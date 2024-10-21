@@ -4,3 +4,8 @@ export type ApiGameSession = {
   room_two: boolean;
   room_three: boolean;
 };
+
+
+export type ApiVerifyCodeResponse = {
+  success: true
+}

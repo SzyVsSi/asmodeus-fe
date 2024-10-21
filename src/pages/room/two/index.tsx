@@ -1,0 +1,131 @@
+import { useState, useEffect } from "react";
+
+const RoomTwo = () => {
+	// Happy Counter: Generate random number between 1 and 666
+	const [happyUsers, setHappyUsers] = useState(0);
+
+	// Fun Fact Array
+	const funFacts = [
+		"John Doe was voiced by three different actors!",
+		"The first episode of John Doe Show was shot in a barn!",
+		"John Doe's sidekick was originally supposed to be a robot!",
+		"John Doe Show had a crossover episode with an alien detective!",
+		"The theme song for John Doe Show won a Grammy!",
+	];
+
+	// Random Fun Fact Generator
+	const [funFact, setFunFact] = useState("");
+
+	useEffect(() => {
+		const randomUsers = Math.floor(Math.random() * 666) + 1;
+		setHappyUsers(randomUsers);
+
+		// Select a random fun fact
+		const randomFact = funFacts[Math.floor(Math.random() * funFacts.length)];
+		setFunFact(randomFact);
+	}, []);
+
+	return (
+		<div className="min-h-screen bg-gradient-to-r from-pink-300 via-purple-400 to-green-300 flex flex-col items-center justify-start p-4">
+			<header className="w-full bg-yellow-500 py-6 text-center shadow-md">
+				<h1 className="text-5xl font-extrabold text-red-700 underline">
+					John Doe Show!!!
+				</h1>
+				<p className="text-xl text-blue-900 italic mt-2">
+					A Journey of Magic and Wonder!
+				</p>
+			</header>
+
+			<div className="w-full bg-green-600 text-white text-center py-4 mt-4">
+				<p className="text-2xl font-bold">
+					Join our concurrent {happyUsers} Happy Users on this Magical Journey!
+				</p>
+			</div>
+
+			<main className="flex flex-col items-start justify-center w-full p-6 bg-pink-200 border-t-4 border-green-500">
+				<div className="flex flex-col md:flex-row w-full justify-between">
+
+					<section className="w-full md:w-2/3 text-left bg-blue-100 p-6 rounded-lg border-8 border-red-700 shadow-lg mb-6">
+						<h2 className="text-3xl font-mono text-green-800 mb-4 underline">
+							Welcome to the John Doe Show!
+						</h2>
+						<p className="text-lg text-purple-800 font-bold">
+							Join John Doe as he explores fantastical worlds, encounters
+							mythical creatures, and learns valuable life lessons! Experience
+							the magic that enchanted millions of children around the globe.
+							Journey through the heartwarming, humorous, and sometimes
+							mysterious adventures of John Doe and friends!
+						</p>
+					</section>
+
+					<section className="w-full md:w-1/3 text-left bg-yellow-100 p-6 rounded-lg border-8 border-blue-700 shadow-lg mb-6 ml-0 md:ml-4">
+						<h2 className="text-3xl font-mono text-red-800 mb-4 underline">
+							Did You Know?
+						</h2>
+						<p className="text-lg text-blue-900 font-bold">{funFact}</p>
+					</section>
+				</div>
+
+				<section className="flex flex-col items-start justify-center w-full space-y-8">
+					<div className="w-full p-6 bg-white border-4 border-purple-900 shadow-xl">
+						<img
+							src="https://static.wixstatic.com/media/c51bd1_e0e453b31d1148979e2dbd1fd0783503~mv2.png/v1/fill/w_974,h_548,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/c51bd1_e0e453b31d1148979e2dbd1fd0783503~mv2.png"
+							alt="Show Origins"
+							className="w-1/2 h-auto mb-4 mx-auto border-2 border-blue-600"
+						/>
+						<p className="text-center text-lg font-bold text-red-600">
+							The Magical Origins of the John Doe Show!
+						</p>
+						<p className="text-sm text-purple-800 mt-2">
+							Discover how the concept for the John Doe Show came from a
+							small-town puppeteer with a dream. Learn about the early days of
+							production and the unexpected success that turned it into a global
+							sensation.
+						</p>
+					</div>
+
+					<div className="w-full p-6 bg-white border-4 border-purple-900 shadow-xl">
+						<img
+							src="https://static.parastorage.com/services/santa-resources/dist/editor/imageUploadToStage/loader_600x600.gif"
+							alt="Kid Actors"
+							className="w-1/2 h-auto mb-4 mx-auto border-2 border-blue-600"
+						/>
+						<p className="text-center text-lg font-bold text-red-600">
+							The Kid Stars Who Brought Magic to Life!
+						</p>
+						<p className="text-sm text-purple-800 mt-2">
+							Meet the young actors who starred alongside John Doe. From their
+							start in Hollywood to the lasting impact they had on the show's
+							fans, these kids became household names during the show's prime.
+						</p>
+					</div>
+
+					<div className="w-full p-6 bg-white border-4 border-purple-900 shadow-xl">
+						<img
+							src="https://static.wixstatic.com/media/c51bd1_622b435a3853462295b38006d135a2c1~mv2.png/v1/fill/w_703,h_386,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Yellow%20and%20Pink%20Colorful%20Creative%20Workshop%20for%20Kids%20YouTuBe%20Thumbnail-3.png"
+							alt="Show's End"
+							className="w-1/2 h-auto mb-4 mx-auto border-2 border-blue-600"
+						/>
+						<p className="text-center text-lg font-bold text-red-600">
+							Why Did the John Doe Show End So Soon?
+						</p>
+						<p className="text-sm text-purple-800 mt-2">
+							Despite its popularity, the John Doe Show met an unexpected end.
+							Explore the behind-the-scenes struggles, creative differences, and
+							financial issues that led to the show's premature cancellation,
+							leaving fans wondering what could have been.
+						</p>
+					</div>
+				</section>
+			</main>
+
+			<footer className="w-full bg-yellow-500 py-8 text-center border-t-8 border-purple-700 shadow-inner">
+				<p className="text-lg font-mono text-purple-900">
+					&copy; 2024 John Doe Show!!! ALL RIGHTS RESERVED!!!!
+				</p>
+			</footer>
+		</div>
+	);
+};
+
+export default RoomTwo;

@@ -7,7 +7,7 @@ type FetchServiceOptions = {
 
 export class FetchService {
   private apiUrl =
-    'https://aufzfslpqpjocwztogzo.supabase.co/functions/v1/asmodeus';
+    'https://aufzfslpqpjocwztogzo.supabase.co/functions/v1';
 
   constructor(private fetchServiceOptions: FetchServiceOptions) {}
 
@@ -25,6 +25,13 @@ export class FetchService {
         body: JSON.stringify(body),
         method: 'PUT',
       },
+    });
+  }
+
+  post<ReturnType>(url: string){
+    return this.request<ReturnType>({
+      url,
+      params: {method: 'POST'}
     });
   }
 
