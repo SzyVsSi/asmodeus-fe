@@ -4,42 +4,45 @@ import { mapGameSessionsToGameSessionEntity } from '../api/helpers';
 import type { ApiVerifyCodeResponse } from '../api/types';
 
 export const createGameSessionsModule = ({
-  gameSessionsApi,
+	gameSessionsApi,
 }: {
-  gameSessionsApi: GameSessionsApi;
+	gameSessionsApi: GameSessionsApi;
 }) => {
-  const useGetAllGameSessions = () => {
-    const { data, isLoading, error, refetch } = useQuery({
-      queryKey: ['gameSessions'],
-      queryFn: () =>
-        gameSessionsApi
-          .getGameSessions()
-          .then(mapGameSessionsToGameSessionEntity),
-    });
+	const useGetAllGameSessions = () => {
+		const { data, isLoading, error, refetch } = useQuery({
+			queryKey: ['gameSessions'],
+			queryFn: () =>
+				gameSessionsApi
+					.getGameSessions()
+					.then(mapGameSessionsToGameSessionEntity),
+		});
 
-    return {
-      data,
-      isLoading,
-      error,
-      refetch,
-    };
-  };
+		return {
+			data,
+			isLoading,
+			error,
+			refetch,
+		};
+	};
 
-  const useVerifyCode = () => {
-    // biome-ignore lint/suspicious/noExplicitAny: <explanation>
-    const {mutateAsync, error, isPending} = useMutation<ApiVerifyCodeResponse, any, string>({
-      mutationFn: (token) => gameSessionsApi.checkValidToken(token)
-    });
+	const useVerifyCode = () => {
+		const { mutateAsync, error, isPending } = useMutation<
+			ApiVerifyCodeResponse,
+			Error,
+			string
+		>({
+			mutationFn: (token) => gameSessionsApi.checkValidToken(token),
+		});
 
-    return {
-      verifyCode: mutateAsync,
-      error,
-      isPending
-    }
-  }
+		return {
+			verifyCode: mutateAsync,
+			error,
+			isPending,
+		};
+	};
 
-  return {
-    useGetAllGameSessions,
-    useVerifyCode
-  };
+	return {
+		useGetAllGameSessions,
+		useVerifyCode,
+	};
 };

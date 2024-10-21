@@ -1,180 +1,113 @@
-import { useState } from "react";
-import signatureJohnDoe from "../../../assets/photos/signaturejohndoe.png";
-import signatureTrustee from "../../../assets/photos/signaturetrustee.png";
+import signatureJohnDoe from '@/assets/images/johnDoe.png';
+import signatureTrustee from '@/assets/images/trustee.png';
+import { Layout } from '@/common/components/layout/Layout';
+import { type FormEventHandler, useState } from 'react';
+import { RedText } from './components/RedText';
+import { Signature } from './components/Signature';
 
 const RoomOne = () => {
 	const [showInput, setShowInput] = useState(false);
-	const [userInput, setUserInput] = useState("");
-	const [resultMessage, setResultMessage] = useState("");
+	const [inputValue, setInputValue] = useState('');
 
-	const handleExpireClick = () => {
-		setShowInput(true);
-	};
+	const handleExpireClick = () => setShowInput(true);
 
-	const handleInputChange = (e) => {
-		setUserInput(e.target.value);
-	};
+	const submitInput: FormEventHandler = (event) => {
+		event.preventDefault();
 
-	const checkInput = () => {
-		if (userInput === "test") {
-			setResultMessage("Correct input!");
-		} else {
-			setResultMessage("Incorrect input. Try again.");
+		if (inputValue === 'test') {
+			alert('Code valid');
 		}
 	};
 
 	return (
-		<div className="flex flex-col items-center justify-center h-screen bg-gray-900 p-4">
-			<div className="bg-gray-800 shadow-2xl rounded-lg p-12 max-w-4xl border-4 border-gray-700">
-				<h1
-					className="text-5xl font-extrabold text-center mb-8 underline text-red-500"
-					style={{ fontFamily: "'Special Elite', cursive" }}
-				>
-					Deed of Trust
-				</h1>
+		<Layout>
+			<div className='flex items-center justify-center h-screen bg-gray-900 p-4'>
+				<div className='bg-gray-800 shadow-2xl rounded-lg p-12 max-w-4xl border-4 border-gray-700'>
+					<h1 className='text-5xl font-extrabold text-center mb-8 underline text-red-500 font-specialElite'>
+						Deed of Trust
+					</h1>
 
-				<p
-					className="text-lg text-gray-300 mb-6 leading-relaxed"
-					style={{ fontFamily: "'Special Elite', cursive" }}
-				>
-					THIS DEED, made this{" "}
-					<span className="font-bold text-red-400">20th</span> day of
-					<span className="font-bold text-red-400"> October</span>,{" "}
-					<span className="font-bold text-red-400">2024</span>, by{" "}
-					<span className="font-bold text-red-400">John Doe</span>, hereinafter
-					referred to as the "Grantor", and{" "}
-					<span className="font-bold text-red-400">
-						Acme Land Title Company
-					</span>
-					, as trustee, hereinafter referred to as the "Trustee".
-				</p>
-
-				<p
-					className="text-lg text-gray-300 mb-6 leading-relaxed"
-					style={{ fontFamily: "'Special Elite', cursive" }}
-				>
-					WITNESSETH: That for and in consideration of the sum of{" "}
-					<span className="font-bold text-red-400">$500,000</span> paid by{" "}
-					<span className="font-bold text-red-400">John Smith</span>, the
-					"Beneficiary," the Grantor does hereby transfer, convey, and assign
-					unto the Trustee, in trust, all that certain property situated in the
-					County of
-					<span className="font-bold text-red-400">Orange</span>, State of{" "}
-					<span className="font-bold text-red-400">California</span>, described
-					as follows:
-				</p>
-
-				<p
-					className="italic text-lg text-gray-500 mb-6 border-l-4 border-red-500 pl-4"
-					style={{ fontFamily: "'Special Elite', cursive" }}
-				>
-					Lot 12, Block 9, in the Subdivision known as "Sunshine Meadows,"
-					according to the official plat recorded in the Public Records of
-					Orange County, California.
-				</p>
-
-				<p
-					className="text-lg text-gray-300 mb-6 leading-relaxed"
-					style={{ fontFamily: "'Special Elite', cursive" }}
-				>
-					TO HAVE AND TO HOLD the said property, together with all appurtenances
-					thereunto belonging, unto the Trustee and its successors forever, in
-					trust for the benefit of the Beneficiary, to secure the payment of the
-					sum of money as stated in the Promissory Note dated the 20th day of
-					<span className="font-bold text-red-400"> October</span>,{" "}
-					<span className="font-bold text-red-400">2024</span>.
-				</p>
-
-				<p
-					className="text-lg text-gray-300 mb-6 leading-relaxed"
-					style={{ fontFamily: "'Special Elite', cursive" }}
-				>
-					Should the Grantor{" "}
-					<button
-						type="button"
-						onClick={handleExpireClick}
-						className="font-bold text-red-400"
-					>
-						expire
-					</button>{" "}
-					before the terms of this agreement are fulfilled, the property and all
-					its claims shall transfer to the Trustee in full.
-				</p>
-
-				{showInput && (
-					<div className="mt-6 flex flex-col items-center">
-						<input
-							type="text"
-							className="border border-gray-500 rounded-lg p-2 bg-gray-700 text-gray-300 mb-4"
-							placeholder="Enter your input"
-							value={userInput}
-							onChange={handleInputChange}
-							style={{ fontFamily: "'Special Elite', cursive" }}
-						/>
-						<button
-							type="button"
-							onClick={checkInput}
-							className="bg-red-500 text-white p-2 rounded-lg hover:bg-red-700"
-							style={{ fontFamily: "'Special Elite', cursive" }}
-						>
-							Check
-						</button>
-					</div>
-				)}
-
-				{resultMessage && (
-					<p
-						className={`mt-4 text-lg text-center ${resultMessage === "Correct input!" ? "text-green-500" : "text-red-500"}`}
-						style={{ fontFamily: "'Special Elite', cursive" }}
-					>
-						{resultMessage}
+					<p className='text-lg text-gray-300 mb-6 leading-relaxed font-specialElite'>
+						THIS DEED, made this <RedText>20th</RedText> day of{' '}
+						<RedText>October</RedText>, <RedText>2024</RedText>, by{' '}
+						<RedText>John Doe</RedText>, hereinafter referred to as the
+						"Grantor" and <RedText>Acme Land Title Company</RedText>, as
+						trustee, hereinafter referred to as the "Trustee".
 					</p>
-				)}
 
-				<div className="flex justify-between items-center mt-12">
-					<div className="text-center">
-						<img
-							src={signatureJohnDoe}
-							alt="John Doe's Signature"
-							className="h-16 mb-2 mx-auto opacity-75"
+					<p className='text-lg text-gray-300 mb-6 leading-relaxed font-specialElite'>
+						WITNESSETH: That for and in consideration of the sum of{' '}
+						<RedText>$500,000</RedText> paid by <RedText>John Smith</RedText>,
+						the "Beneficiary," the Grantor does hereby transfer, convey, and
+						assign unto the Trustee, in trust, all that certain property
+						situated in the County of <RedText>Orange</RedText>, State of{' '}
+						<RedText>California</RedText>, described as follows:
+					</p>
+
+					<blockquote className='italic text-lg text-gray-500 mb-6 border-l-4 border-red-500 pl-4 font-specialElite'>
+						Lot 12, Block 9, in the Subdivision known as "Sunshine Meadows,"
+						according to the official plat recorded in the Public Records of
+						Orange County, California.
+					</blockquote>
+
+					<p className='text-lg text-gray-300 mb-6 leading-relaxed font-specialElite'>
+						TO HAVE AND TO HOLD the said property, together with all
+						appurtenances thereunto belonging, unto the Trustee and its
+						successors forever, in trust for the benefit of the Beneficiary, to
+						secure the payment of the sum of money as stated in the Promissory
+						Note dated the 20th day of <RedText>October</RedText>,{' '}
+						<RedText>2024</RedText>.
+					</p>
+
+					<p className='text-lg text-gray-300 mb-6 leading-relaxed font-specialElite'>
+						Should the Grantor{' '}
+						<button
+							type='button'
+							onClick={handleExpireClick}
+							className='font-bold text-red-400'
+						>
+							expire
+						</button>{' '}
+						before the terms of this agreement are fulfilled, the property and
+						all its claims shall transfer to the Trustee in full.
+					</p>
+
+					{showInput && (
+						<form
+							className='mt-6 flex flex-col items-center'
+							onSubmit={submitInput}
+						>
+							<input
+								type='text'
+								className='border border-gray-500 rounded-lg p-2 bg-gray-700 text-gray-300 mb-4 font-specialElite'
+								placeholder='Enter your input'
+								value={inputValue}
+								onChange={(e) => setInputValue(e.target.value)}
+							/>
+							<button
+								type='submit'
+								className='bg-red-500 text-white p-2 rounded-lg hover:bg-red-700 font-specialElite'
+							>
+								Check
+							</button>
+						</form>
+					)}
+
+					<div className='flex justify-between items-center mt-12'>
+						<Signature
+							name='John Doe'
+							role='Grantor'
+							signatureSrc={signatureJohnDoe}
 						/>
-						<p className="underline text-gray-400">_________________________</p>
-						<p
-							className="text-red-500"
-							style={{ fontFamily: "'Special Elite', cursive" }}
-						>
-							John Doe
-						</p>
-						<p
-							className="text-sm text-gray-500"
-							style={{ fontFamily: "'Special Elite', cursive" }}
-						>
-							Grantor
-						</p>
-					</div>
-					<div className="text-center">
-						<img
-							src={signatureTrustee}
-							alt="Trustee's Signature"
-							className="h-16 mb-2 mx-auto opacity-75"
+						<Signature
+							name="Trustee's Representative"
+							role='Trustee'
+							signatureSrc={signatureTrustee}
 						/>
-						<p className="underline text-gray-400">_________________________</p>
-						<p
-							className="text-red-500"
-							style={{ fontFamily: "'Special Elite', cursive" }}
-						>
-							Trustee's Representative
-						</p>
-						<p
-							className="text-sm text-gray-500"
-							style={{ fontFamily: "'Special Elite', cursive" }}
-						>
-							Trustee
-						</p>
 					</div>
 				</div>
 			</div>
-		</div>
+		</Layout>
 	);
 };
 
