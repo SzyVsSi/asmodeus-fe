@@ -1,2 +1,0 @@
-import{j as e}from"./index-BVS5nKVb.js";import{L as a}from"./Layout-xXWISJeh.js";import{g as l}from"./apiInitializer-BxIn7Q9V.js";const c=()=>{const{useGetAllGameSessions:t}=l,{data:o,isLoading:r}=t();return e.jsx(a,{children:e.jsxs("div",{className:"flex flex-col gap-2",children:[r&&e.jsx("p",{className:"text-lg",children:"Loading..."}),o==null?void 0:o.map(s=>e.jsxs("p",{className:"text-lg",children:[s.token,", room one active:",String(s.getRoomStatus("one"))]},s.token))]})})};export{c as default};
-//# sourceMappingURL=index-OAZLGhBB.js.map
