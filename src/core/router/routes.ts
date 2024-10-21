@@ -1,6 +1,6 @@
 export enum Routes {
-	Home = '/',
-	TheDeed = '/the-deed',
-	JohnDoeShow = '/the-john-doe-show',
-	TheTruth = '/the-truth',
+	Home = '/asmodeus-fe',
+	TheDeed = '/asmodeus-fe/the-deed',
+	JohnDoeShow = '/asmodeus-fe/the-john-doe-show',
+	TheTruth = '/asmodeus-fe/the-truth',
 }
