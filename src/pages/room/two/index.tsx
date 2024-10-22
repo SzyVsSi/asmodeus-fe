@@ -1,6 +1,7 @@
-// Bro what are all these comments LOL
+//Comments help me rember stuff
 
 import { sections } from './data/sections';
+import { Link } from 'react-router-dom';
 
 const funFacts = [
 	'John Doe was voiced by three different actors!',
@@ -54,7 +55,7 @@ const RoomTwo = () => (
 			</div>
 
 			<section className='space-y-8'>
-				{sections.map(({ imgSrc, alt, title, description }) => (
+				{sections.map(({ imgSrc, alt, title, description, link }) => (
 					<div
 						key={title}
 						className='w-full p-6 bg-white border-4 border-purple-900 shadow-xl'
@@ -64,9 +65,12 @@ const RoomTwo = () => (
 							alt={alt}
 							className='w-1/2 h-auto mb-4 mx-auto border-2 border-blue-600'
 						/>
-						<p className='text-center text-lg font-bold text-red-600'>
+						<Link
+							to={link}
+							className='text-center text-lg font-bold text-red-600'
+						>
 							{title}
-						</p>
+						</Link>
 						<p className='text-sm text-purple-800 mt-2'>{description}</p>
 					</div>
 				))}

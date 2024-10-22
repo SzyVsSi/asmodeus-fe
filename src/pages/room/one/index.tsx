@@ -4,10 +4,13 @@ import { Layout } from '@/common/components/layout/Layout';
 import { type FormEventHandler, useState } from 'react';
 import { RedText } from './components/RedText';
 import { Signature } from './components/Signature';
+import { Routes } from '@/core/router/routes';
+import { useNavigate } from 'react-router-dom';
 
 const RoomOne = () => {
 	const [showInput, setShowInput] = useState(false);
 	const [inputValue, setInputValue] = useState('');
+	const navigate = useNavigate();
 
 	const handleExpireClick = () => setShowInput(true);
 
@@ -15,7 +18,10 @@ const RoomOne = () => {
 		event.preventDefault();
 
 		if (inputValue === 'test') {
-			alert('Code valid');
+			//open first door logic
+			navigate(Routes.JohnDoeShow);
+		} else {
+			alert('Wrong');
 		}
 	};
 
