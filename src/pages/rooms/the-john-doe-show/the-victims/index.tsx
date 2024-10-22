@@ -1,4 +1,6 @@
-const TheVictims = () => (
+import { withRedirect } from '@/core/router/helpers';
+
+const TheVictimsPage = () => (
 	<div className='min-h-screen bg-gradient-to-r from-pink-300 via-purple-400 to-green-300 flex flex-col items-center p-4'>
 		<header className='w-full bg-yellow-500 py-6 text-center shadow-md'>
 			<h1 className='text-5xl font-extrabold text-red-700 underline'>
@@ -45,4 +47,4 @@ const TheVictims = () => (
 	</div>
 );
 
-export default TheVictims;
+export default withRedirect(TheVictimsPage, 'room_one');

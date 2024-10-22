@@ -1,16 +1,22 @@
 import { lazy } from 'react';
 import { createBrowserRouter } from 'react-router-dom';
 import { Routes } from './routes';
-import TheBeginning from '@/pages/room/two/the-beginning';
-import TheVictims from '@/pages/room/two/the-victims';
 
 // Lazy loading the components for each route
 const HomeRoute = lazy(() => import('@/pages/home'));
-const RoomOneRoute = lazy(() => import('@/pages/room/one'));
-const RoomTwoRoute = lazy(() => import('@/pages/room/two'));
-const RoomThreeRoute = lazy(() => import('@/pages/room/three'));
-const TheIncident = lazy(() => import('@/pages/room/two/the-incident'));
+const RoomOneRoute = lazy(() => import('@/pages/rooms/the-deed'));
+const RoomTwoRoute = lazy(() => import('@/pages/rooms/the-john-doe-show'));
+const RoomThreeRoute = lazy(() => import('@/pages/rooms/the-truth'));
+const TheIncident = lazy(
+	() => import('@/pages/rooms/the-john-doe-show/the-incident'),
+);
 const Run = lazy(() => import('@/pages/run'));
+const TheBeginning = lazy(
+	() => import('@/pages/rooms/the-john-doe-show/the-beginning'),
+);
+const TheVictims = lazy(
+	() => import('@/pages/rooms/the-john-doe-show/the-victims'),
+);
 
 export const router = createBrowserRouter([
 	{

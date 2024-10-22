@@ -18,7 +18,8 @@
 			"@/assets/*": ["src/assets/*"],
 			"@/common/*": ["src/common/*"],
 			"@/core/*": ["src/core/*"],
-			"@/pages/*": ["src/pages/*"]
+			"@/pages/*": ["src/pages/*"],
+			"@/util/*": ["src/util/*"]
 		},
 
 		/* Linting */
