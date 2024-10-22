@@ -1,11 +1,21 @@
 import { withRedirect } from '@/core/router/helpers';
 import { Routes } from '@/core/router/routes';
+import { SessionStorageService } from '@/util/sessionStorage';
 import { useNavigate } from 'react-router-dom';
 
 const RunPage = () => {
 	const navigate = useNavigate();
 
 	const handleClick = () => {
+		const token = SessionStorageService.getItem('token');
+
+		if (token) {
+			SessionStorageService.removeItem('token');
+			SessionStorageService.removeItem('room_three');
+			SessionStorageService.removeItem('room_two');
+			SessionStorageService.removeItem('room_one');
+		}
+
 		navigate(Routes.Home);
 	};
 

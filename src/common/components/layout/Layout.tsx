@@ -5,5 +5,7 @@ type Props = {
 };
 
 export const Layout = ({ children }: Props) => {
-	return <div className='min-w-full min-h-screen bg-slate-300'>{children}</div>;
+	return (
+		<div className='w-dvw h-dvh overflow-y-auto bg-slate-300'>{children}</div>
+	);
 };
