@@ -1,0 +1,2 @@
+var i=Object.defineProperty;var I=(r,t,e)=>t in r?i(r,t,{enumerable:!0,configurable:!0,writable:!0,value:e}):r[t]=e;var m=(r,t,e)=>I(r,typeof t!="symbol"?t+"":t,e);const s=class s{static getItem(t){return sessionStorage.getItem(`${s.prefix}${t}`)}static setItem(t,e){return sessionStorage.setItem(`${s.prefix}${t}`,e)}static removeItem(t){return sessionStorage.removeItem(`${s.prefix}${t}`)}};m(s,"prefix","ASMODEUS_");let a=s;export{a as S};
+//# sourceMappingURL=sessionStorage-DGTnMAlk.js.map

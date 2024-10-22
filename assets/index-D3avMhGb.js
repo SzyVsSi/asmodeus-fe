@@ -1,0 +1,2 @@
+import{u as o,j as e,R as r}from"./index-B6LJlVIB.js";import{a as n}from"./helpers-B5t02UzT.js";import"./sessionStorage-DGTnMAlk.js";const a=()=>{const t=o(),s=()=>{t(r.Home)};return e.jsx("div",{className:"flex items-center justify-center h-screen bg-black",children:e.jsx("h1",{className:"text-red-600 text-9xl font-bold ",children:e.jsx("button",{type:"button",className:"hover:text-white hover:cursor-pointer",onClick:s,children:"RUN"})})})},m=n(a,"room_three");export{m as default};
+//# sourceMappingURL=index-D3avMhGb.js.map
