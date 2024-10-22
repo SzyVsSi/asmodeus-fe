@@ -27,10 +27,10 @@ export class FetchService {
 		});
 	}
 
-	post<ReturnType>(url: string) {
+	post<ReturnType>(url: string, body?: unknown) {
 		return this.request<ReturnType>({
 			url,
-			params: { method: 'POST' },
+			params: { method: 'POST', body: JSON.stringify(body) },
 		});
 	}
 

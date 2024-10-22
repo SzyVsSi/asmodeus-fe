@@ -1,7 +1,7 @@
 import { useMutation, useQuery } from '@tanstack/react-query';
 import type { GameSessionsApi } from '../api/gameSessionsApi';
 import { mapGameSessionsToGameSessionEntity } from '../api/helpers';
-import type { ApiVerifyCodeResponse } from '../api/types';
+import type { ApiRoom, ApiVerifyCodeResponse } from '../api/types';
 
 export const createGameSessionsModule = ({
 	gameSessionsApi,
@@ -25,7 +25,29 @@ export const createGameSessionsModule = ({
 		};
 	};
 
-	const useVerifyCode = () => {
+	const useCheckCode = () => {
+		const { mutateAsync, error, isPending } = useMutation<
+			ApiVerifyCodeResponse,
+			Error,
+			{
+				token: string;
+				code: string;
+				room: ApiRoom;
+			}
+		>({
+			mutationFn: (params) => {
+				return gameSessionsApi.checkValidCode(params);
+			},
+		});
+
+		return {
+			checkCode: mutateAsync,
+			error,
+			isPending,
+		};
+	};
+
+	const useVerifyToken = () => {
 		const { mutateAsync, error, isPending } = useMutation<
 			ApiVerifyCodeResponse,
 			Error,
@@ -35,7 +57,7 @@ export const createGameSessionsModule = ({
 		});
 
 		return {
-			verifyCode: mutateAsync,
+			verifyToken: mutateAsync,
 			error,
 			isPending,
 		};
@@ -43,6 +65,7 @@ export const createGameSessionsModule = ({
 
 	return {
 		useGetAllGameSessions,
-		useVerifyCode,
+		useCheckCode,
+		useVerifyToken,
 	};
 };

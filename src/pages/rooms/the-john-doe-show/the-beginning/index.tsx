@@ -1,4 +1,6 @@
-const TheBeginning = () => (
+import { withRedirect } from '@/core/router/helpers';
+
+const TheBeginningPage = () => (
 	<div className='min-h-screen bg-gradient-to-r from-pink-300 via-purple-400 to-green-300 flex flex-col items-center p-4'>
 		<header className='w-full bg-yellow-500 py-6 text-center shadow-md'>
 			<h1 className='text-5xl font-extrabold text-red-700 underline'>
@@ -42,4 +44,4 @@ const TheBeginning = () => (
 	</div>
 );
 
-export default TheBeginning;
+export default withRedirect(TheBeginningPage, 'room_one');

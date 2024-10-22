@@ -1,29 +1,18 @@
 import signatureJohnDoe from '@/assets/images/johnDoe.png';
 import signatureTrustee from '@/assets/images/trustee.png';
+import { CodeCheckForm } from '@/common/components/CodeCheckInput';
 import { Layout } from '@/common/components/layout/Layout';
-import { type FormEventHandler, useState } from 'react';
+import { withRedirectToHome } from '@/core/router/helpers';
+import { Routes } from '@/core/router/routes';
+import clsx from 'clsx';
+import { useState } from 'react';
 import { RedText } from './components/RedText';
 import { Signature } from './components/Signature';
-import { Routes } from '@/core/router/routes';
-import { useNavigate } from 'react-router-dom';
 
-const RoomOne = () => {
+const TheDeedPage = () => {
 	const [showInput, setShowInput] = useState(false);
-	const [inputValue, setInputValue] = useState('');
-	const navigate = useNavigate();
 
 	const handleExpireClick = () => setShowInput(true);
-
-	const submitInput: FormEventHandler = (event) => {
-		event.preventDefault();
-
-		if (inputValue === 'test') {
-			//open first door logic
-			navigate(Routes.JohnDoeShow);
-		} else {
-			alert('Wrong');
-		}
-	};
 
 	return (
 		<Layout>
@@ -79,24 +68,16 @@ const RoomOne = () => {
 					</p>
 
 					{showInput && (
-						<form
-							className='mt-6 flex flex-col items-center'
-							onSubmit={submitInput}
-						>
-							<input
-								type='text'
-								className='border border-gray-500 rounded-lg p-2 bg-gray-700 text-gray-300 mb-4 font-specialElite'
-								placeholder='Enter your input'
-								value={inputValue}
-								onChange={(e) => setInputValue(e.target.value)}
-							/>
-							<button
-								type='submit'
-								className='bg-red-500 text-white p-2 rounded-lg hover:bg-red-700 font-specialElite'
-							>
-								Check
-							</button>
-						</form>
+						<CodeCheckForm
+							room='room_one'
+							to={Routes.JohnDoeShow}
+							formClassName='mt-6 flex flex-col items-center'
+							inputClassName='border border-gray-500 rounded-lg p-2 bg-gray-700 text-gray-300 mb-4 font-specialElite'
+							buttonClassName={clsx(
+								'bg-red-500 text-white p-2 rounded-lg hover:bg-red-700 font-specialElite',
+							)}
+							placeholder='Enter code...'
+						/>
 					)}
 
 					<div className='flex justify-between items-center mt-12'>
@@ -117,4 +98,4 @@ const RoomOne = () => {
 	);
 };
 
-export default RoomOne;
+export default withRedirectToHome(TheDeedPage);

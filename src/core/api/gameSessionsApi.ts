@@ -1,5 +1,5 @@
 import type { FetchService } from '../services/fetchService';
-import type { ApiGameSession, ApiVerifyCodeResponse } from './types';
+import type { ApiGameSession, ApiRoom, ApiVerifyCodeResponse } from './types';
 
 export class GameSessionsApi {
 	constructor(private fetchService: FetchService) {}
@@ -8,9 +8,27 @@ export class GameSessionsApi {
 		return this.fetchService.get<Array<ApiGameSession>>('/asmodeus');
 	}
 
-	async checkValidToken(token: string) {
+	async checkValidCode({
+		token,
+		code,
+		room,
+	}: {
+		token: string;
+		code: string;
+		room: ApiRoom;
+	}) {
 		return this.fetchService.post<ApiVerifyCodeResponse>(
 			`/verify-code/${token}`,
+			{
+				code,
+				room,
+			},
+		);
+	}
+
+	async checkValidToken(token: string) {
+		return this.fetchService.post<ApiVerifyCodeResponse>(
+			`/verify-token/${token}`,
 		);
 	}
 }

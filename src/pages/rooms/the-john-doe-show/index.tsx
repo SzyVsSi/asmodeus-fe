@@ -1,7 +1,6 @@
-//Comments help me rember stuff
-
-import { sections } from './data/sections';
+import { withRedirect } from '@/core/router/helpers';
 import { Link } from 'react-router-dom';
+import { sections } from './data/sections';
 
 const funFacts = [
 	'John Doe was voiced by three different actors!',
@@ -14,7 +13,7 @@ const funFacts = [
 const happyUsers = Math.floor(Math.random() * 666) + 1;
 const randomFact = funFacts[Math.floor(Math.random() * funFacts.length)];
 
-const RoomTwo = () => (
+const TheJohnDoeShowPage = () => (
 	<div className='min-h-screen bg-gradient-to-r from-pink-300 via-purple-400 to-green-300 flex flex-col items-center p-4'>
 		<header className='w-full bg-yellow-500 py-6 text-center shadow-md'>
 			<h1 className='text-5xl font-extrabold text-red-700 underline'>
@@ -85,4 +84,4 @@ const RoomTwo = () => (
 	</div>
 );
 
-export default RoomTwo;
+export default withRedirect(TheJohnDoeShowPage, 'room_one');
