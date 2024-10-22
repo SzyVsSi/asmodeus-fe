@@ -23,12 +23,12 @@ const TheVictims = () => (
 					Grace, the kind-hearted dreamer who added warmth to every episode.
 				</p>
 				<p className='text-lg text-purple-800 font-bold mt-4'>
-					Together, Michael (Big Brother), Sarah (Big Sister), David (Little
-					Brother), and Grace (Little Sister) captured the imagination of
-					children and adults alike, bringing a magical blend of authenticity
-					and charm to their roles. Their performances helped shape the legacy
-					of the show, making John Doe Show a timeless classic in children's
-					television history.
+					Together, Michael (13 years old), Sarah (11 years old), David (8 years
+					old), and Grace (5 years old) captured the imagination of children and
+					adults alike, bringing a magical blend of authenticity and charm to
+					their roles. Their performances helped shape the legacy of the show,
+					making John Doe Show a timeless classic in children's television
+					history.
 				</p>
 				<p className='text-lg text-purple-800 font-bold mt-4'>
 					But John Doe... had other plans for these kids... A more grandiose
