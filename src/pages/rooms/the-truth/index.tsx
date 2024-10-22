@@ -97,4 +97,4 @@ const TheTruthPage = () => (
 	</div>
 );
 
-export default withRedirect(TheTruthPage, 'room_three');
+export default withRedirect(TheTruthPage, 'room_two');

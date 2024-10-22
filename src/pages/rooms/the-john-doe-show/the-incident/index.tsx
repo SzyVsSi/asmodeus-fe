@@ -55,7 +55,7 @@ const TheIncidentPage = () => (
 
 				<CodeCheckForm
 					room='room_two'
-					to={Routes.TheVictims}
+					to={Routes.TheTruth}
 					formClassName='flex justify-center items-center mt-4'
 					inputClassName='w-full p-4 border-4 border-purple-900 shadow-lg text-lg font-bold text-red-700 placeholder-red-600'
 					buttonClassName='ml-4 p-4 bg-red-700 text-white font-bold rounded-lg shadow-lg'

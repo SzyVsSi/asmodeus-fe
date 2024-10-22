@@ -1,6 +1,5 @@
-import { useMutation, useQuery } from '@tanstack/react-query';
+import { useMutation } from '@tanstack/react-query';
 import type { GameSessionsApi } from '../api/gameSessionsApi';
-import { mapGameSessionsToGameSessionEntity } from '../api/helpers';
 import type { ApiRoom, ApiVerifyCodeResponse } from '../api/types';
 
 export const createGameSessionsModule = ({
@@ -8,23 +7,6 @@ export const createGameSessionsModule = ({
 }: {
 	gameSessionsApi: GameSessionsApi;
 }) => {
-	const useGetAllGameSessions = () => {
-		const { data, isLoading, error, refetch } = useQuery({
-			queryKey: ['gameSessions'],
-			queryFn: () =>
-				gameSessionsApi
-					.getGameSessions()
-					.then(mapGameSessionsToGameSessionEntity),
-		});
-
-		return {
-			data,
-			isLoading,
-			error,
-			refetch,
-		};
-	};
-
 	const useCheckCode = () => {
 		const { mutateAsync, error, isPending } = useMutation<
 			ApiVerifyCodeResponse,
@@ -63,9 +45,25 @@ export const createGameSessionsModule = ({
 		};
 	};
 
+	const useDeleteToken = () => {
+		const { mutateAsync, isPending, error } = useMutation<
+			ApiVerifyCodeResponse,
+			Error,
+			string
+		>({
+			mutationFn: (token) => gameSessionsApi.deleteToken(token),
+		});
+
+		return {
+			deleteToken: mutateAsync,
+			isPending,
+			error,
+		};
+	};
+
 	return {
-		useGetAllGameSessions,
 		useCheckCode,
 		useVerifyToken,
+		useDeleteToken,
 	};
 };

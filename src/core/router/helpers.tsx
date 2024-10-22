@@ -16,6 +16,10 @@ export const withRedirectToHome = <T extends object>(
 	Component: ComponentType<T>,
 ) => {
 	return (props: T) => {
+		if (import.meta.env.DEV) {
+			return <Component {...props} />;
+		}
+
 		const token = SessionStorageService.getItem('token');
 		if (!token) {
 			return <Navigate to={Routes.Home} replace />;
@@ -30,6 +34,10 @@ export const withRedirect = <T extends object>(
 	roomToCheck: ApiRoom | 'run',
 ) => {
 	return (props: T) => {
+		if (import.meta.env.DEV) {
+			return <Component {...props} />;
+		}
+
 		const token = SessionStorageService.getItem('token');
 		if (!token) {
 			return <Navigate to={Routes.Home} replace />;

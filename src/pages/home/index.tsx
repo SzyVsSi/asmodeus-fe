@@ -10,6 +10,7 @@ type Inputs = {
 };
 
 const HomePage = () => {
+	const navigate = useNavigate();
 	const { useVerifyToken } = gameSessionsModule;
 	const { verifyToken, error, isPending } = useVerifyToken();
 	const {
@@ -17,7 +18,6 @@ const HomePage = () => {
 		handleSubmit,
 		formState: { errors },
 	} = useForm<Inputs>();
-	const navigate = useNavigate();
 
 	const onSubmit: SubmitHandler<Inputs> = async ({ token }) => {
 		await verifyToken(token);

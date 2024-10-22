@@ -34,6 +34,13 @@ export class FetchService {
 		});
 	}
 
+	delete<ReturnType>(url: string) {
+		return this.request<ReturnType>({
+			url,
+			params: { method: 'DELETE' },
+		});
+	}
+
 	async request<ReturnType>({
 		url,
 		params,
