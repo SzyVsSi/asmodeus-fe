@@ -1,7 +1,7 @@
 export const sections = [
 	{
 		imgSrc:
-			'https://static.wixstatic.com/media/c51bd1_e0e453b31d1148979e2dbd1fd0783503~mv2.png/v1/fill/w_974,h_548,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/c51bd1_e0e453b31d1148979e2dbd1fd0783503~mv2.png',
+			'https://static.parastorage.com/services/santa-resources/dist/editor/imageUploadToStage/loader_600x600.gif',
 		alt: 'Show Origins',
 		title: 'The Magical Origins of the John Doe Show!',
 		description:
@@ -19,7 +19,7 @@ export const sections = [
 	},
 	{
 		imgSrc:
-			'https://static.wixstatic.com/media/c51bd1_622b435a3853462295b38006d135a2c1~mv2.png/v1/fill/w_703,h_386,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Yellow%20and%20Pink%20Colorful%20Creative%20Workshop%20for%20Kids%20YouTuBe%20Thumbnail-3.png',
+			'https://static.parastorage.com/services/santa-resources/dist/editor/imageUploadToStage/loader_600x600.gif',
 		alt: "Show's End",
 		title: 'Why Did the John Doe Show End So Soon?',
 		description:

@@ -25,8 +25,8 @@ const TheVictimsPage = () => (
 					Grace, the kind-hearted dreamer who added warmth to every episode.
 				</p>
 				<p className='text-lg text-purple-800 font-bold mt-4'>
-					Together, Michael (13 years old), Sarah (11 years old), David (8 years
-					old), and Grace (5 years old) captured the imagination of children and
+					Together, David (8 years old), Michael (13 years old), Sarah (11 years old)
+					and Grace (5 years old) captured the imagination of children and
 					adults alike, bringing a magical blend of authenticity and charm to
 					their roles. Their performances helped shape the legacy of the show,
 					making John Doe Show a timeless classic in children's television

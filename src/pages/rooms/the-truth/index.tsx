@@ -64,9 +64,8 @@ const TheTruthPage = () => (
 			</p>
 
 			<p className='text-xl text-black italic mt-4'>
-				4. And the angels which kept not their first estate, but left their own
-				habitation, he hath reserved in everlasting chains under darkness unto
-				the judgment of the great day. <br />— Jude 1:6
+				4. A good tree cannot bear bad fruit, and a bad tree cannot bear good
+				fruit. <br />— Matthew 7:18
 			</p>
 		</div>
 

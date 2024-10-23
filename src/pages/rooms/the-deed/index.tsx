@@ -1,4 +1,4 @@
-import signatureTrustee from '@/assets/images/hawkTuah.svg';
+import signatureTrustee from '@/assets/images/bartholomewSnickerdoodle.svg';
 import signatureJohnDoe from '@/assets/images/johnDoe.svg';
 import { CodeCheckForm } from '@/common/components/CodeCheckInput';
 import { Layout } from '@/common/components/layout/Layout';

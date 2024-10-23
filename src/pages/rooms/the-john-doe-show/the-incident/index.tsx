@@ -53,13 +53,16 @@ const TheIncidentPage = () => (
 					Only the silence remained.
 				</p>
 
+				<p className='text-lg text-purple-800 font-bold'>
+					Their names... were the beginning... of the end...
+				</p>
+
 				<CodeCheckForm
 					room='room_two'
 					to={Routes.TheTruth}
 					formClassName='flex justify-center items-center flex-wrap gap-4 mt-4'
-					inputClassName='p-4 border-4 border-purple-900 shadow-lg text-lg font-bold text-red-700 placeholder-red-600 flex-grow'
+					inputClassName='p-4 border-4 border-purple-900 shadow-lg text-sm md:text-lg font-bold text-red-700 placeholder-red-600 flex-grow min-w-full'
 					buttonClassName='p-4 bg-red-700 text-white font-bold rounded-lg shadow-lg'
-					placeholder='The start of each of the victim, was the beginning of the end...'
 				/>
 			</article>
 		</main>
