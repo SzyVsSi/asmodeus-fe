@@ -12,7 +12,9 @@ import { Signature } from './components/Signature';
 const TheDeedPage = () => {
 	const [showInput, setShowInput] = useState(false);
 
-	const handleExpireClick = () => setShowInput(true);
+	const handleClick = () => {
+		setShowInput(true);
+	};
 
 	return (
 		<Layout>
@@ -50,23 +52,20 @@ const TheDeedPage = () => {
 						<RedText>2024</RedText>.
 					</p>
 					<p className='text-xs md:text-lg text-gray-300 mb-6 leading-relaxed font-specialElite whitespace-pre-wrap text-wrap'>
-						Should the Grantor{' '}
-						<button
-							type='button'
-							onClick={handleExpireClick}
-							className='font-bold text-red-400'
-						>
-							expire
-						</button>{' '}
-						before the terms of this agreement are fulfilled, the property and
-						all its claims shall transfer to the Trustee in full.
+						Should the Grantor expire before the terms of this agreement are
+						fulfilled, the property and all its claims shall transfer to the
+						Trustee in full. Yet, the key to unlocking these rights lies in
+						deciphering the message held within{' '}
+						<button type='button' onClick={handleClick}>
+							<RedText className='underline'>the accompanying note</RedText>.
+						</button>
 					</p>
 					{showInput && (
 						<CodeCheckForm
 							room='room_one'
 							to={Routes.JohnDoeShow}
-							formClassName='mt-6 flex flex-col items-center'
-							inputClassName='border border-gray-500 rounded-lg p-2 bg-gray-700 text-gray-300 mb-4 font-specialElite'
+							formClassName='mt-6 flex w-fit mx-auto flex-row items-center gap-2'
+							inputClassName='border border-gray-500 rounded-lg p-2 bg-gray-700 text-gray-300 font-specialElite'
 							buttonClassName={clsx(
 								'bg-red-500 text-white p-2 rounded-lg hover:bg-red-700 font-specialElite',
 							)}

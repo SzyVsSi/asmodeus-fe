@@ -24,7 +24,7 @@ const TheTruthPage = () => (
 			🚨 EXPOSED -- THE INNOCENCE LIE 🚨
 		</h2>
 
-		<p className='text-purple-500 text-xl leading-loose border-2 border-black p-2 bg-red-100 word-spacing-wide'>
+		<p className='text-purple-500 text-md leading-loose border-2 border-black p-2 bg-red-100 word-spacing-wide'>
 			OPEN YOUR EYES!!! The kids --- THEY WERE NEVER PURE!!! You think THEY were
 			just like you?
 			<span className='text-2xl text-red-500 font-bold'> HA! </span> NOTHING is
@@ -46,27 +46,34 @@ const TheTruthPage = () => (
 			<h3 className='text-red-500 text-xl underline'>
 				Biblical Prophecies: The Fall of Asmodeus
 			</h3>
-			<p className='text-xl text-black italic'>
-				1. And the devil that deceived them was cast into the lake of fire and
-				brimstone, where the beast and the false prophet are, and shall be
-				tormented day and night for ever and ever. <br />— Revelation 20:10
-			</p>
+			<div className='flex flex-col gap-4 font-bold'>
+				<p className='text-xl text-black italic'>
+					1. And the devil that deceived them was cast into the lake of{' '}
+					<span className='underline'>bright fire and brimstone</span>, where
+					the beast and the false prophet are, and shall be tormented day and
+					night for ever and ever. <br />— Revelation 20:10
+				</p>
 
-			<p className='text-xl text-black italic mt-4'>
-				2. They sacrificed unto devils, not to God; to gods whom they knew not,
-				to new gods that came newly up, whom your fathers feared not. <br />—
-				Deuteronomy 32:17
-			</p>
+				<p className='text-xl text-black italic'>
+					2. A good tree cannot bear{' '}
+					<span className='underline'>bad fruit</span>, and a bad tree cannot
+					bear <span className='underline'>good fruit</span>.
+					<br />— Matthew 7:18
+				</p>
 
-			<p className='text-xl text-black italic mt-4'>
-				3. Be sober, be vigilant; because your adversary the devil, as a roaring
-				lion, walketh about, seeking whom he may devour. <br />— 1 Peter 5:8
-			</p>
+				<p className='text-xl text-black italic'>
+					3. They sacrificed unto devils, not to{' '}
+					<span className='underline'>God</span>; to gods whom they knew not, to
+					new gods that came newly up, whom your fathers feared not. <br />—
+					Deuteronomy 32:17
+				</p>
 
-			<p className='text-xl text-black italic mt-4'>
-				4. A good tree cannot bear bad fruit, and a bad tree cannot bear good
-				fruit. <br />— Matthew 7:18
-			</p>
+				<p className='text-xl text-black italic'>
+					4. <span className='underline'>Be sober, be vigilant</span>; because
+					your adversary the devil, as a roaring lion, walketh about, seeking
+					whom he may devour. <br />— 1 Peter 5:8
+				</p>
+			</div>
 		</div>
 
 		<p className='text-orange-500 text-xl border-t-4 border-black pt-4 mt-5 text-left p-5'>

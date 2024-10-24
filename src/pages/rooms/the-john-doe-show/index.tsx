@@ -16,9 +16,7 @@ const randomFact = funFacts[Math.floor(Math.random() * funFacts.length)];
 const TheJohnDoeShowPage = () => (
 	<div className='min-h-screen bg-gradient-to-r from-pink-300 via-purple-400 to-green-300 flex flex-col items-center p-4'>
 		<header className='w-full bg-yellow-500 py-6 text-center shadow-md'>
-			<h1 className='text-5xl font-extrabold text-red-700 underline'>
-				John Doe Show!!!
-			</h1>
+			<h1 className='text-5xl font-extrabold text-red-700'>John Doe Show!!!</h1>
 			<p className='text-xl text-blue-900 italic mt-2'>
 				A Journey of Magic and Wonder!
 			</p>
@@ -33,7 +31,7 @@ const TheJohnDoeShowPage = () => (
 		<main className='w-full p-6 bg-pink-200 border-t-4 border-green-500'>
 			<div className='flex flex-col md:flex-row justify-between'>
 				<section className='w-full md:w-2/3 bg-blue-100 p-6 rounded-lg border-8 border-red-700 shadow-lg mb-6'>
-					<h2 className='text-3xl font-mono text-green-800 mb-4 underline'>
+					<h2 className='text-3xl font-mono text-green-800 mb-4 font-bold'>
 						Welcome to the John Doe Show!
 					</h2>
 					<p className='text-lg text-purple-800 font-bold'>
@@ -46,7 +44,7 @@ const TheJohnDoeShowPage = () => (
 				</section>
 
 				<section className='w-full md:w-1/3 bg-yellow-100 p-6 rounded-lg border-8 border-blue-700 shadow-lg mb-6 ml-0 md:ml-4'>
-					<h2 className='text-3xl font-mono text-red-800 mb-4 underline'>
+					<h2 className='text-3xl font-mono text-red-800 mb-4 font-bold'>
 						Did You Know?
 					</h2>
 					<p className='text-lg text-blue-900 font-bold'>{randomFact}</p>
@@ -66,7 +64,7 @@ const TheJohnDoeShowPage = () => (
 						/>
 						<Link
 							to={link}
-							className='text-center text-lg font-bold text-red-600'
+							className='text-center text-xl font-bold text-red-600 h-3 underline hover:text-blue-600 focus:text-blue-600'
 						>
 							{title}
 						</Link>

@@ -1,5 +1,15 @@
+import clsx from 'clsx';
 import type { ReactNode } from 'react';
 
-export const RedText = ({ children }: { children: ReactNode }) => {
-	return <span className='font-bold text-red-400'>{children}</span>;
+type Props = {
+	children: ReactNode;
+	className?: string;
+};
+
+export const RedText = ({ children, className }: Props) => {
+	return (
+		<span className={clsx('font-bold text-red-400', className)}>
+			{children}
+		</span>
+	);
 };
