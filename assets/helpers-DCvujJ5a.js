@@ -1,0 +1,2 @@
+import{d as e,j as t,N as s}from"./index-BWPXJGId.js";import{S as n}from"./sessionStorage-DGTnMAlk.js";const m={room_one:e.Home,room_two:e.TheDeed,room_three:e.JohnDoeShow,run:e.TheTruth},x=r=>o=>n.getItem("token")?t.jsx(r,{...o}):t.jsx(s,{to:e.Home,replace:!0}),d=(r,o)=>i=>n.getItem("token")?n.getItem(o)==="true"?t.jsx(r,{...i}):t.jsx(s,{to:m[o],replace:!0}):t.jsx(s,{to:e.Home,replace:!0});export{d as a,x as w};
+//# sourceMappingURL=helpers-DCvujJ5a.js.map
