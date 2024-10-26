@@ -19,6 +19,7 @@ export const LanguagePicker = () => {
 			options={options}
 			components={animatedComponents}
 			placeholder={`${t('language')}...`}
+			defaultValue={options.find((option) => option.value === i18n.language)}
 		/>
 	);
 };

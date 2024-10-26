@@ -31,9 +31,6 @@ const HomePage = () => {
 
 	return (
 		<div className='h-screen flex flex-col justify-center items-center gap-3 bg-gray-300'>
-			<div className='min-w-60'>
-				<LanguagePicker />
-			</div>
 			<div className='bg-white p-8 shadow-lg rounded-lg w-3/4 md:w-2/4'>
 				<h1 className='text-3xl font-bold mb-6 text-center'>
 					{t('common:asmodeus')}
@@ -65,6 +62,9 @@ const HomePage = () => {
 						{isPending ? `${t('common:verifying')}...` : t('common:verify')}
 					</button>
 				</form>
+			</div>
+			<div className='min-w-fit'>
+				<LanguagePicker />
 			</div>
 		</div>
 	);
