@@ -3,13 +3,16 @@ import { gameSessionsModule } from '@/core/services/apiInitializer';
 import { SessionStorageService } from '@/util/sessionStorage';
 import clsx from 'clsx';
 import { type SubmitHandler, useForm } from 'react-hook-form';
+import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
+import { LanguagePicker } from './components/LanguagePicker';
 
 type Inputs = {
 	token: string;
 };
 
 const HomePage = () => {
+	const { t } = useTranslation('home');
 	const navigate = useNavigate();
 	const { useVerifyToken } = gameSessionsModule;
 	const { verifyToken, error, isPending } = useVerifyToken();
@@ -27,17 +30,18 @@ const HomePage = () => {
 	};
 
 	return (
-		<div className='h-screen flex flex-col justify-center items-center bg-gray-300'>
+		<div className='h-screen flex flex-col justify-center items-center gap-3 bg-gray-300'>
+			<div className='min-w-60'>
+				<LanguagePicker />
+			</div>
 			<div className='bg-white p-8 shadow-lg rounded-lg w-3/4 md:w-2/4'>
-				<h1 className='text-3xl font-bold mb-6 text-center'>Asmodeus</h1>
-				<p className='text-2xl mb-6 text-center'>
-					Hello Player! Please enter the code provided to you in the game in
-					order to begin. Do not close this tab, as you'll need it to progress
-					further.
-				</p>
+				<h1 className='text-3xl font-bold mb-6 text-center'>
+					{t('common:asmodeus')}
+				</h1>
+				<p className='text-2xl mb-6 text-center'>{t('introduction')}</p>
 				{(errors.token || error) && (
 					<p className='text-red-500 mb-6 text-center'>
-						Please enter a valid game code.
+						{t('errors.invalidCode')}
 					</p>
 				)}
 				<form onSubmit={handleSubmit(onSubmit)}>
@@ -58,7 +62,7 @@ const HomePage = () => {
 							},
 						)}
 					>
-						{isPending ? 'Verifying...' : 'Verify'}
+						{isPending ? `${t('common:verifying')}...` : t('common:verify')}
 					</button>
 				</form>
 			</div>

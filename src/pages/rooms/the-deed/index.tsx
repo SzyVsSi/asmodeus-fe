@@ -6,10 +6,12 @@ import { withRedirectToHome } from '@/core/router/helpers';
 import { Routes } from '@/core/router/routes';
 import clsx from 'clsx';
 import { useState } from 'react';
+import { Trans, useTranslation } from 'react-i18next';
 import { RedText } from './components/RedText';
 import { Signature } from './components/Signature';
 
 const TheDeedPage = () => {
+	const { t } = useTranslation('theDeed');
 	const [showInput, setShowInput] = useState(false);
 
 	const handleClick = () => {
@@ -21,44 +23,45 @@ const TheDeedPage = () => {
 			<div className='flex items-center justify-center h-screen bg-gray-900 p-4 overflow-auto'>
 				<div className='bg-gray-800 shadow-2xl rounded-lg p-4 md:p-12 max-w-4xl border-4 border-gray-700 max-h-full overflow-auto'>
 					<h1 className='text-2xl md:text-5xl font-extrabold text-center mb-8 underline text-red-500 font-specialElite'>
-						Deed of Trust
+						{t('title')}
 					</h1>
 					<p className='text-xs md:text-lg text-gray-300 mb-6 leading-relaxed font-specialElite whitespace-pre-wrap'>
-						THIS DEED, made this <RedText>20th</RedText> day of{' '}
-						<RedText>October</RedText>, <RedText>2024</RedText>, by{' '}
-						<RedText>John Doe</RedText>, hereinafter referred to as the
-						"Grantor" and <RedText>Acme Land Title Company</RedText>, as
-						trustee, hereinafter referred to as the "Trustee".
+						<Trans
+							i18nKey='thisDeed'
+							t={t}
+							components={[<RedText key='redText' />]}
+						/>
 					</p>
 					<p className='text-xs md:text-lg text-gray-300 mb-6 leading-relaxed font-specialElite whitespace-pre-wrap text-wrap'>
-						WITNESSETH: That for and in consideration of the sum of{' '}
-						<RedText>$500,000</RedText> paid by <RedText>John Smith</RedText>,
-						the "Beneficiary," the Grantor does hereby transfer, convey, and
-						assign unto the Trustee, in trust, all that certain property
-						situated in the County of <RedText>Orange</RedText>, State of{' '}
-						<RedText>California</RedText>, described as follows:
+						<Trans
+							i18nKey='witnesseth'
+							t={t}
+							components={[<RedText key='redText' />]}
+						/>
 					</p>
 					<blockquote className='italic text-xs md:text-lg text-gray-500 mb-6 border-l-4 border-red-500 pl-4 font-specialElite whitespace-pre-wrap text-wrap'>
-						Lot 12, Block 9, in the Subdivision known as "Sunshine Meadows,"
-						according to the official plat recorded in the Public Records of
-						Orange County, California.
+						<Trans
+							i18nKey='quote'
+							t={t}
+							components={[<RedText key='redText' />]}
+						/>
 					</blockquote>
 					<p className='text-xs md:text-lg text-gray-300 mb-6 leading-relaxed font-specialElite whitespace-pre-wrap text-wrap'>
-						TO HAVE AND TO HOLD the said property, together with all
-						appurtenances thereunto belonging, unto the Trustee and its
-						successors forever, in trust for the benefit of the Beneficiary, to
-						secure the payment of the sum of money as stated in the Promissory
-						Note dated the 20th day of <RedText>October</RedText>,{' '}
-						<RedText>2024</RedText>.
+						<Trans
+							i18nKey='property'
+							t={t}
+							components={[<RedText key='redText' />]}
+						/>
 					</p>
 					<p className='text-xs md:text-lg text-gray-300 mb-6 leading-relaxed font-specialElite whitespace-pre-wrap text-wrap'>
-						Should the Grantor expire before the terms of this agreement are
-						fulfilled, the property and all its claims shall transfer to the
-						Trustee in full. Yet, the key to unlocking these rights lies in
-						deciphering the message held within{' '}
-						<button type='button' onClick={handleClick}>
-							<RedText className='underline'>the accompanying note</RedText>.
-						</button>
+						<Trans
+							i18nKey='expire'
+							t={t}
+							components={{
+								0: <RedText key='redText' className='underline' />,
+								1: <button key='button' type='button' onClick={handleClick} />,
+							}}
+						/>
 					</p>
 					{showInput && (
 						<CodeCheckForm
@@ -69,18 +72,18 @@ const TheDeedPage = () => {
 							buttonClassName={clsx(
 								'bg-red-500 text-white p-2 rounded-lg hover:bg-red-700 font-specialElite',
 							)}
-							placeholder='Enter code...'
+							placeholder={`${t('placeholder')}...`}
 						/>
 					)}
 					<div className='flex flex-row justify-around items-center mt-12'>
 						<Signature
 							name='John Doe'
-							role='Grantor'
+							role={t('grantor')}
 							signatureSrc={signatureJohnDoe}
 						/>
 						<Signature
-							name="Trustee's Representative"
-							role='Trustee'
+							name={t('representative')}
+							role={t('trustee')}
 							signatureSrc={signatureTrustee}
 						/>
 					</div>

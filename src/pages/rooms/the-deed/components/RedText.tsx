@@ -1,12 +1,11 @@
 import clsx from 'clsx';
-import type { ReactNode } from 'react';
+import type { PropsWithChildren } from 'react';
 
 type Props = {
-	children: ReactNode;
 	className?: string;
 };
 
-export const RedText = ({ children, className }: Props) => {
+export const RedText = ({ children, className }: PropsWithChildren<Props>) => {
 	return (
 		<span className={clsx('font-bold text-red-400', className)}>
 			{children}

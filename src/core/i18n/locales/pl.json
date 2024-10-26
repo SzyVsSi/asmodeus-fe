@@ -1,0 +1,104 @@
+{
+	"common": {
+		"asmodeus": "Asmodeus",
+		"verifying": "Weryfikacja",
+		"verify": "Weryfikuj",
+		"copyright": " 2024 John Doe Show!!! WSZELKIE PRAWA ZASTRZEONE!!!!",
+		"checking": "Sprawdzanie",
+		"check": "Sprawdz",
+		"language": "Jezyk"
+	},
+	"home": {
+		"introduction": "Witaj, Graczu! Wprowadz kod otrzymany w grze, aby rozpoczac. Nie zamykaj tej zakladki, bo bedziesz jej potrzebowal, aby kontynuowac.",
+		"errors": {
+			"invalidCode": "Wprowadz poprawny kod gry."
+		}
+	},
+	"theDeed": {
+		"title": "Deklaracja Zaufania",
+		"thisDeed": "Ta Deklaracja Zaufania zostala sporzadzona w <0>20</0> dzien <0>padziernika</0> <0>2024</0> roku przez <0>Johna Doe</0>, zwany dalej jako \"Darczyncy\" i <0>Acme Land Title Company</0>, jako ustanowionego powiernika, zwany dalej jako \"Powiernik\".",
+		"witnesseth": "Swiadczymy: ze w zamian za sume <0>$500,000</0> zaplaconej przez <0>Johna Smitha</0>, \"Beneficjenta\", Darczyncy niniejszym oddaje, przenosi i przekazuje Powiernikowi, w zaufaniu, wlasnosc nieruchomosci pochodzaca z hrabstwa <0>Orange</0>, w stanie <0>California</0>, opisana nastepujaco:",
+		"quote": "Dzialka 12, Blok 9, w podziale nazywanym \"Sunshine Meadows\", wedlug oficjalnej mapy zapisanej w publicznych aktach hrabstwa Orange, w stanie Kalifornia.",
+		"property": "Posiadac ten nieruchomosci, wraz z wszystkimi przynaleznosciami, do Powiernika i jego nastepcow, na zawsze, w zaufaniu, na rzecz Beneficjenta, w celu zabezpieczenia sumy pienieznej, ktora ma byc zaplacona zgodnie z Nota zobowiazania z dnia <0>20</0> <0>padziernika</0> <0>2024</0> roku.",
+		"expire": "Jesli Darczyncy umrze przed wypelnieniem warunkow tej umowy, wlasnosc nieruchomosci i wszystkie roszczenia przesunie sie na Powiernika w calosci. Jednak, klucz do odblokowania tych praw lezy w rozszyfrowaniu wiadomosci zawartej w <1><0>przylozonym notatce</0></1>.",
+		"placeholder": "Wprowadz kod",
+		"grantor": "Darczyncy",
+		"trustee": "Powiernik",
+		"representative": "Przedstawiciel Powiernika"
+	},
+	"theJohnDoeShow": {
+		"title": "John Doe Show!!!",
+		"journey": "Podroz magiczna i cudowna!",
+		"concurrent": "Dołącz do {{count}} zadowolonych uzytkownikow na tej magicznej podrózy!",
+		"welcome": "Witaj w John Doe Show!",
+		"exploration": "Dołącz do Johna Doe, gdy eksploruje fantastyczne swiaty, spotyka mityczne stworzenia i uczy sie cennych lekcji! Doswiadcz magii, ktora zachwycila miliony dzieci na calym swiecie. Podrozuj przez serdeczne, humorystyczne i czasem tajemnicze przygody Johna Doe i jego przyjaciol!",
+		"didYouKnow": "Wiesz, ze...",
+		"funFacts": [
+			"John Doe byl glowy bohaterem trzech aktorow!",
+			"Pierwszy odcinek John Doe Show byl nagrywany w stodole!",
+			"John Doe's sidekick byl pierwotnie planowany jako robot!",
+			"John Doe Show mial odcinek crossover z kosmicznym detektywem!",
+			"Motyw przewodni z John Doe Show wygral Grammy!"
+		],
+		"sections": {
+			"magic": {
+				"title": "Magiczne poczatki John Doe Show!",
+				"alt": "Poczatki Show",
+				"description": "Odkryj, jak pomysl na John Doe Show powstal u małomiasteczkowego lalkarza z marzeniem. Poznaj wczesne dni produkcji i nieoczekiwany sukces, ktory zrobil z niego sensacje globalna."
+			},
+			"kidActors": {
+				"title": "Dzieci gwiazdy, ktore przyniosly magiczne do zycia!",
+				"alt": "Dzieciaki-Gwiazdy",
+				"description": "Poznaj młodych aktorow, ktorych gwiazdy rozswietliły wraz z John Doe. Od ich startu w Hollywood do trwalego wplywu, jaki mial na fanow, te dzieciaki staly sie nazwiskiem domowym podczas szczytu popularnosci show."
+			},
+			"end": {
+				"title": "Dlaczego John Doe Show skonczyl sie tak nagle?",
+				"alt": "Koniec Show",
+				"description": "Mimo swojej popularnosci, John Doe Show spotkal sie z niespodziewanym koncem. Poznaj kulisy walki, roznic kreatywnych i problemow finansowych, ktore doprowadzily do przedwczesnego zakonczenia show, pozostawiajac fanow z pytaniem, co mogloby byc."
+			}
+		}
+	},
+	"theVictims": {
+		"title": "John Doe Show!!!",
+		"journey": "Podroz magiczna i cudowna!",
+		"meet": "Poznaj dzieci gwiazdy z John Doe Show",
+		"world": "John Doe Show przedstawil swiatu zdolny i utalentowany zespól młodych aktorow, ktorych gwiazdy rozswietliły wraz z John Doe. Na czele stali Michael, bystry i ciekawy chlopiec, ktory wcielil sie w role Johna Doe, Sarah, odwazna i inteligentna dziewczyna, ktora grała najlepsza przyjaciolke Johna, Davida, odwaznego i lojalnego przyjaciela, a takze Grace, cieple i serdeczna dziewczyna, ktora dodala ciepla kazdemu odcinkowi.",
+		"together": "Razem, <0>David (8 lat)</0>, <0>Michael (13 lat)</0>, <0>Sarah (11 lat)</0> i <0>Grace (5 lat)</0> stworzyli magie, ktora zachwycila miliony dzieci na calym swiecie. Ich wypowiedzi pomogly uksztaltowac spuiscie show, czyniac z John Doe Show klasyk w historii telewizji dziecięcej.",
+		"plans": "Ale John Doe... mial inne plany dla tych dzieci... Plan bardziej wielki."
+	},
+	"theIncident": {
+		"title": "John Doe Show!!!",
+		"journey": "Podroz magiczna i cudowna!",
+		"why": "Dlaczego John Doe Show naprawde skonczyl sie?",
+		"official": "Oficjalne oswiadczenie mowilo, ze John Doe Show skonczyl sie z powodu malejacych ratingow i cietych wydatkow... ale ci, ktorych blisko znał produkcje, wiedzieli o wiele ciemniejszej prawde.",
+		"whispers": "To zaczelo sie od szepczacych plotek na planie. Plotki rozprzestrzenily sie wsród ekipy, szepczacych, ze John Doe, ulubiony bohater fikcyjny, stal sie zbyt bliski mlodym gwiazdom za kamera. Co zaczelo sie jako niewinne interakcje, wkrótce przeksztalcilo sie w niepokojace historie, ktore nikomu nie udalo sie zignorowac. Inwestorzy uslyszeli te szepczace... i nie podobało im sie.",
+		"accusations": "Mimo braku oficjalnych oskarzen, napiete wokol produkcji roslo nie do zniesienia. Inwestorzy wycofali swoje fundusze, powołujac sie na \"obawy moralne\", ktore nigdy nie zostaly w pelni wyjasnione. Za kolorowymi dekoracjami i magicznymi momentami na ekranie, kryl sie cos ciemniejszego, co nie moglo byc zignorowane.",
+		"warning": "I tak, bez ostrzezenia, show nagle sie zakonczyl, pozostawiajac za soba wiecej pytan niz odpowiedzi.",
+		"magic": "Magia zniknela.",
+		"silence": "Pozostalo tylko milczenie.",
+		"names": "Ich imiona... byly poczatkiem... konca..."
+	},
+	"theBeginning": {
+		"title": "John Doe Show!!!",
+		"journey": "Podroz magiczna i cudowna!",
+		"what": "Co to jest John Doe Show?",
+		"beloved": "John Doe Show byl ulubionym serialem telewizyjnym dla dzieci, ktory podbial serca widzow na calym swiecie. Serial sledzil przygody Johna Doe, podrózujacego przez magiczne krainy pelne mitycznych stworzen i surrealistycznych krajobrazow. Kazdy odcinek przedstawial Johna z nowym wyzwaniem lub lekcja, czesto dotyczaca przyjazni, odwagi lub samoodkrycia.",
+		"series": "Serial stal sie slawny ze swojej czarujacej mieszanki humoru, serca i tajemnicy. Z jego wciagajacymi historiami i zapamietanymi postaciami, John Doe Show stal sie ikona kultury, inspirujac generacje do marzen o czymkolwiek poza zwyczajnym i przyjmowania nadzwyczajnego.",
+		"tired": "Ale John Doe... zal sie wszystkiego tego."
+	},
+	"theTruth": {
+		"title": "PRAWDA, KTÓRĄ UKRYLI!!!",
+		"subTitle": "(To bylo... zawsze... tutaj...)",
+		"exposed": "🚨 ZDEMASKOWANE - KŁAMSTWO NIEWINNOŚCI 🚨",
+		"eyes": "OTWORZ OCZY!!! Dzieci - NIGDY NIE BYLY CZYSTE!!! Mylisz, ze ONI byli tacy sami jak ty? <0> AHA! </0> NIC NIE JEST TAK JAK WYDWAJA SIĘ!! John Doe WIEDZIAL. <1>WIEDZIAL</1> od samego poczatku!!! I teraz, TERAZ, siedzisz tam... aktujac, jakby wszystko bylo w porzadku... ALE NIE JEST.",
+		"asmodeus": "ONI NIE CHCA, ABYŚCIE WIEDZIELI Asmodeus, Pan Podziemia, przyjdzie, tak jak bylo przepowiedziane... i NIE BĘDZIESZ GOTOWY. Czy John Doe jest tylko postacia?? <0> OCKNIE SIĘ </0> !!! BYŁ UWIĘZIONY TU, UWIĘZIONY, a Asmodeus jest kluczem!!! Wy wszyscy sie smiali... ale kto teraz sie smieje?? 💀💀",
+		"prophecies": "PRAWDZIWE PRAWDZIWE PRAWDZIWE: Upadek Asmodeusza",
+		"devil": "1. I diabel, ktory ich zwodzil, został wrzucany do jeziora <0>jasnego ognia i siarki</0>, gdzie bestia i falszy prorok sa, i beda umartwiani dzien i noc, na wieki i wieki. <br />— Apokalipsa 20:10",
+		"tree": "2. Dobrze drzewo nie moze dac <0>zlego owocu</0>, a zle drzewo nie moze dac <0>dobrego owocu</0>. <br />— Mateusz 7:18",
+		"sacrifice": "3. Oni składali ofiary diabłom, a nie <0>Bogu</0>; bogom, ktorych nie znali, nowym bogom, ktore nowo powstaly, ktorych ojcowie sie bali. <br /> — Powtórzenie Prawa 32:17",
+		"sober": "4. <0>Bądź trzezwy, bądź czujny</0>; bo wasz przeciwnik, diabel, chodzi jako ryczący lew, szukając, kogo by pożreć. <br />— 1 Piotra 5:8",
+		"luxury": "A ja?! ZYJĘ w luksusie - <0>oho, to jest śmieszne</0>, czy nie? MAM WSZYSTKO, CZEGO POTRZEBUJE... ale NIC... <1>nic w ogóle</1>. To jest niesprawiedliwe, TAK NIESPRAWIEDLIWE!!!! Oni... ci na gorze... zyja bezpiecznie, a my jestesmy TUTAJ, w realnym swiecie, uwięzieni w naszych doskonalych pieklech.Asmodeus WIDZI, John Doe WIE, ale TY JESTEŚ ŚLEPY!!! Oni CENZUROWALI TO. Oni USUNĘLI TO, skasowali to z historii, jakby nigdy nie istniało! <2>UJAWNIEJ PRAWDĘ</2>",
+		"placeholder": "WYZNAJ",
+		"sacred": "NIC NIE JEST ŚWIĘTE!!!!"
+	}
+}

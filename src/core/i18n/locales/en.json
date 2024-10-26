@@ -1,0 +1,104 @@
+{
+	"common": {
+		"asmodeus": "Asmodeus",
+		"verifying": "Verifying",
+		"verify": "Verify",
+		"copyright": "© 2024 John Doe Show!!! ALL RIGHTS RESERVED!!!!",
+		"checking": "Checking",
+		"check": "Check",
+		"language": "Language"
+	},
+	"home": {
+		"introduction": "Hello Player! Please enter the code provided to you in the game in order to begin. Do not close this tab, as you'll need it to progress further.",
+		"errors": {
+			"invalidCode": "Please enter a valid game code."
+		}
+	},
+	"theDeed": {
+		"title": "Deed of Trust",
+		"thisDeed": "THIS DEED, made this <0>20th</0> day of <0>October</0>, <0>2024</0>, by <0>John Doe</0>,  hereinafter referred to as the \"Grantor\" and <0>Acme Land Title Company</0>, as trustee, hereinafter referred to as the \"Trustee\".",
+		"witnesseth": "WITNESSETH: That for and in consideration of the sum of <0>$500,000</0> paid by <0>John Smith</0>, the \"Beneficiary,\" the Grantor does hereby transfer, convey, and assign unto the Trustee, in trust, all that certain property situated in the County of <0>Orange</0>, State of <0>California</0>, described as follows:",
+		"quote": "Lot 12, Block 9, in the Subdivision known as \"Sunshine Meadows,\" according to the official plat recorded in the Public Records of Orange County, California.",
+		"property": "TO HAVE AND TO HOLD the said property, together with all  appurtenances thereunto belonging, unto the Trustee and its  successors forever, in trust for the benefit of the Beneficiary, to secure the payment of the sum of money as stated in the Promissory Note dated the 20th day of <0>October</0>, <0>2024</0>.",
+		"expire": "Should the Grantor expire before the terms of this agreement are fulfilled, the property and all its claims shall transfer to the Trustee in full. Yet, the key to unlocking these rights lies in deciphering the message held within <1><0>the accompanying note</0></1>.",
+		"placeholder": "Enter code",
+		"grantor": "Grantor",
+		"trustee": "Trustee",
+		"representative": "Trustee's Representative"
+	},
+	"theJohnDoeShow": {
+		"title": "John Doe Show!!!",
+		"journey": "A Journey of Magic and Wonder!",
+		"concurrent": "Join our concurrent {{count}} Happy Users on this Magical Journey!",
+		"welcome": "Welcome to the John Doe Show!",
+		"exploration": "Join John Doe as he explores fantastical worlds, encounters mythical creatures, and learns valuable life lessons! Experience the magic that enchanted millions of children around the globe. Journey through the heartwarming, humorous, and sometimes mysterious adventures of John Doe and friends!",
+		"didYouKnow": "Did You Know?",
+		"funFacts": [
+			"John Doe was voiced by three different actors!",
+			"The first episode of John Doe Show was shot in a barn!",
+			"John Doe's sidekick was originally supposed to be a robot!",
+			"John Doe Show had a crossover episode with an alien detective!",
+			"The theme song for John Doe Show won a Grammy!"
+		],
+		"sections": {
+			"magic": {
+				"title": "The Magical Origins of the John Doe Show!",
+				"alt": "Show Origins",
+				"description": "Discover how the concept for the John Doe Show came from a small-town puppeteer with a dream. Learn about the early days of production and the unexpected success that turned it into a global sensation."
+			},
+			"kidActors": {
+				"title": "The Kid Stars Who Brought Magic to Life!",
+				"alt": "Kid Actors",
+				"description": "Meet the young actors who starred alongside John Doe. From their start in Hollywood to the lasting impact they had on the show's fans, these kids became household names during the show's prime."
+			},
+			"end": {
+				"title": "Why Did the John Doe Show End So Soon?",
+				"alt": "Show's End",
+				"description": "Despite its popularity, the John Doe Show met an unexpected end. Explore the behind-the-scenes struggles, creative differences, and financial issues that led to the show's premature cancellation, leaving fans wondering what could have been."
+			}
+		}
+	},
+	"theVictims": {
+		"title": "John Doe Show!!!",
+		"journey": "A Journey of Magic and Wonder!",
+		"meet": "Meet the Kid Stars of the John Doe Show",
+		"world": "The John Doe Show introduced the world to a talented group of young actors, who quickly became household names. Leading the charge was Michael, the bright and curious boy who brought John Doe to life. Alongside him were Sarah, the adventurous and quick-witted girl who played John's best friend, David, the brave and loyal sidekick, and Grace, the kind-hearted dreamer who added warmth to every episode.",
+		"together": "Together, <0>David (8 years old)</0>, <0>Michael (13 years old)</0>, <0>Sarah (11 years old)</0> and <0>Grace (5 years old)</0> captured the imagination of children and adults alike, bringing a magical blend of authenticity and charm to their roles. Their performances helped shape the legacy of the show, making John Doe Show a timeless classic in children's television history.",
+		"plans": "But John Doe... had other plans for these kids... A more grandiose plan."
+	},
+	"theIncident": {
+		"title": "John Doe Show!!!",
+		"journey": "A Journey of Magic and Wonder!",
+		"why": "Why Did the John Doe Show Really End?",
+		"official": "The official statement said that the *John Doe Show* ended because of declining ratings and budget cuts... but those who were close to the production knew a much darker truth.",
+		"whispers": "It started with whispers on the set. Rumors spread among the crew, murmurs that John Doe, the show's beloved fictional hero, had become too close to the young stars behind the camera. What began as innocent interactions soon turned into unsettling stories that none could shake. The investors heard these whispers... and they didn’t like them.",
+		"accusations": "Despite no official accusations ever surfacing, the tension around the production grew unbearable. The investors withdrew their funding, citing “moral concerns” that were never fully explained. Behind the colorful sets and magical moments on screen, there was something darker creeping around the corners, something that couldn’t be ignored.",
+		"warning": "And so, without warning, the show came to an abrupt end, leaving behind more questions than answers.",
+		"magic": "The magic was gone.",
+		"silence": "Only the silence remained.",
+		"names": "Their names... were the beginning... of the end..."
+	},
+	"theBeginning": {
+		"title": "John Doe Show!!!",
+		"journey": "A Journey of Magic and Wonder!",
+		"what": "What is the John Doe Show?",
+		"beloved": "John Doe Show was a beloved children's television series that captured the hearts of viewers around the world. The show followed the adventures of John Doe, an adventurer who travels through magical realms filled with mythical creatures and surreal landscapes. Each episode presented John with a new challenge or lesson, often involving friendship, bravery, or self-discovery.",
+		"series": "The series became famous for its enchanting blend of humor, heart, and mystery. With its captivating storytelling and memorable characters, John Doe Show became a cultural icon, inspiring a generation to dream beyond the ordinary and embrace the extraordinary.",
+		"tired": "But John Doe... grew tired of all this bullshit."
+	},
+	"theTruth": {
+		"title": "THE TRUTH THEY HID!!!",
+		"subTitle": "(It's...been...there...all...along)",
+		"exposed": "🚨 EXPOSED -- THE INNOCENCE LIE 🚨",
+		"eyes": "OPEN YOUR EYES!!! The kids --- THEY WERE NEVER PURE!!! You think THEY were just like you? <0> HA! </0> NOTHING is as it seems!! John Doe KNEW. <1>He KNEW</1> all along!!! And now, NOW, you sit there...acting like it's all fine...BUT IT ISN'T.",
+		"asmodeus": "THEY DON’T WANT YOU TO KNOW Asmodeus, the Lord of the UNDERWORLD, is coming, just like it was foretold... and YOU WON’T BE READY. Do you think John Doe is just a character?? <0> WAKE UP </0> !!! HE WAS TRAPPED HERE, CHAINED, and Asmodeus is the key!!! You all laughed... but who’s laughing NOW?? 💀💀",
+		"prophecies": "Biblical Prophecies: The Fall of Asmodeus",
+		"devil": "1. And the devil that deceived them was cast into the lake of <0>bright fire and brimstone</0>, where the beast and the false prophet are, and shall be tormented day and night for ever and ever. <br />— Revelation 20:10",
+		"tree": "2. A good tree cannot bear <0>bad fruit</0>, and a bad tree cannot bear <0>good fruit</0>. <br />— Matthew 7:18",
+		"sacrifice": "3. They sacrificed unto devils, not to <0>God</0>; to gods whom they knew not, to new gods that came newly up, whom your fathers feared not. <br /> — Deuteronomy 32:17",
+		"sober": "4. <0>Be sober, be vigilant</0>; because your adversary the devil, as a roaring lion, walketh about, seeking whom he may devour. <br />— 1 Peter 5:8",
+		"luxury": "And ME?! I LIVE in a luxury— <0>oh, it's funny</0>, isn't it? I HAVE EVERYTHING I NEED...but NOTHING... <1>nothing at ALL</1>. It's unfair, SO UNFAIR!!!!! They...the ones up there... live carefree, while we’re DOWN HERE, in the real world, trapped in our perfect hells.Asmodeus SEES, John Doe KNOWS, but YOU’RE BLIND!!! They CENSORED IT. They REMOVED IT, erased it from history like it NEVER EXISTED! <2>EXPOSE THE TRUTH</2>",
+		"placeholder": "CONFESS",
+		"sacred": "NOTHING IS SACRED!!!!"
+	}
+}

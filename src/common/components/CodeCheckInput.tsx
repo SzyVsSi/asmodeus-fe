@@ -4,6 +4,7 @@ import { gameSessionsModule } from '@/core/services/apiInitializer';
 import { SessionStorageService } from '@/util/sessionStorage';
 import clsx from 'clsx';
 import { type SubmitHandler, useForm } from 'react-hook-form';
+import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 
 type Inputs = {
@@ -27,6 +28,7 @@ export const CodeCheckForm = ({
 	buttonClassName,
 	placeholder,
 }: Props) => {
+	const { t } = useTranslation('common');
 	const { useCheckCode } = gameSessionsModule;
 	const navigate = useNavigate();
 	const { checkCode, isPending } = useCheckCode();
@@ -55,7 +57,7 @@ export const CodeCheckForm = ({
 					'cursor-not-allowed': isPending,
 				})}
 			>
-				{isPending ? 'Checking...' : 'Check'}
+				{isPending ? `${t('checking')}...` : t('check')}
 			</button>
 		</form>
 	);

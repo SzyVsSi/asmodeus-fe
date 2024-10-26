@@ -1,0 +1,104 @@
+{
+	"common": {
+		"asmodeus": "Asmodeus",
+		"verifying": "Verificatie",
+		"verify": "Verifieer",
+		"copyright": " 2024 John Doe Show!!! ALLE RECHTEN VOORBEHOUDEN!!!!",
+		"checking": "Controle",
+		"check": "Controleer",
+		"language": "Taal"
+	},
+	"home": {
+		"introduction": "Hallo Speler! Voer de code in die u in het spel hebt ontvangen om te beginnen. Sluit deze tab niet, want u heeft hem nodig om verder te gaan.",
+		"errors": {
+			"invalidCode": "Voer een geldige spelcode in."
+		}
+	},
+	"theDeed": {
+		"title": "Erfenisakte",
+		"thisDeed": "DEZE AKTE, opgesteld op <0>20ste</0> dag van <0>oktober</0>, <0>2024</0>, door <0>John Doe</0>, hierna genoemd de \"Schenker\" en <0>Acme Land Title Company</0>, als trustee, hierna genoemd de \"Trustee\".",
+		"witnesseth": "GETUIGT: Dat voor en in overweging van de som van <0>$500,000</0> betaald door <0>John Smith</0>, de \"Begunstigde,\" de Schenker hierbij overdraagt, transporteert en toewijst aan de Trustee, in trust, alle eigendom gelegen in het County van <0>Orange</0>, Staat van <0>California</0>, beschreven als volgt:",
+		"quote": "Lot 12, Block 9, in de Subdivisie bekend als \"Sunshine Meadows,\" volgens de officiele plattegrond opgenomen in de Openbare Registers van Orange County, California.",
+		"property": "HET GEBOUW EN ALLE APPARTEMENTEN DAARONTOE BEHOREND, aan de Trustee en zijn opvolgers voor eeuwig, in trust voor de begunstiging van de Begunstigde, om de betaling van de som van geld te garanderen zoals vermeld in de Promissory Note van <0>20ste</0> dag van <0>oktober</0>, <0>2024</0>.",
+		"expire": "Indien de Schenker overlijdt voordat de voorwaarden van deze overeenkomst zijn vervuld, zal het eigendom en alle rechten daarin overgaan op de Trustee in zijn geheel. Echter, de sleutel tot het openen van deze rechten ligt in het ontcijferen van de boodschap in <1><0>de bijbehorende nota</0></1>.",
+		"placeholder": "Code invoeren",
+		"grantor": "Schenker",
+		"trustee": "Trustee",
+		"representative": "Vertegenwoordiger van de Trustee"
+	},
+	"theJohnDoeShow": {
+		"title": "John Doe Show!!!",
+		"journey": "Een Reis van Magie en Wonder!",
+		"concurrent": "Sluit u aan bij onze {{count}} Blijde Gebruikers op deze Magische Reis!",
+		"welcome": "Welkom bij de John Doe Show!",
+		"exploration": "Kom mee op een reis met John Doe terwijl hij fantastische werelden verkent, mythische wezens ontmoet en waardevolle levenslessen leert! Ervaar de magie die miljoenen kinderen over de hele wereld heeft betoverd. Reis mee door de hartverwarmende, humoristische en soms mysterieuze avonturen van John Doe en zijn vrienden!",
+		"didYouKnow": "Wist u dat?",
+		"funFacts": [
+			"John Doe werd ingesproken door drie verschillende acteurs!",
+			"De eerste aflevering van John Doe Show werd opgenomen in een schuur!",
+			"John Doe's sidekick was oorspronkelijk bedoeld als een robot!",
+			"John Doe Show had een crossover-aflevering met een buitenaardse detective!",
+			"De themasong van John Doe Show won een Grammy!"
+		],
+		"sections": {
+			"magic": {
+				"title": "De Magische Oorsprong van de John Doe Show!",
+				"alt": "Show Origins",
+				"description": "Ontdek hoe het concept voor de John Doe Show ontstond bij een kleine dorpeling met een droom. Leer over de vroege dagen van de productie en het onverwachte succes dat het tot een wereldwijd fenomeen maakte."
+			},
+			"kidActors": {
+				"title": "De Kindsterren die Magie tot Leven Brachten!",
+				"alt": "Kid Actors",
+				"description": "Ontmoet de jonge acteurs die naast John Doe speelden. Van hun start in Hollywood tot de blijvende impact die ze hadden op de fans van de show, werden deze kinderen huishoudnamen tijdens de hoogtijdagen van de show."
+			},
+			"end": {
+				"title": "Waarom eindigde de John Doe Show Zo Snel?",
+				"alt": "Show's End",
+				"description": "Ondanks zijn populariteit kwam de John Doe Show plotseling ten einde. Verken de achter-de-schermen-strijd, creatieve verschillen en financi le problemen die leidden tot de vroege be nming van de show, waardoor fans zich afvroegen wat er had kunnen zijn."
+			}
+		}
+	},
+	"theVictims": {
+		"title": "John Doe Show!!!",
+		"journey": "Een Reis van Magie en Wonder!",
+		"meet": "Ontmoet de Kindsterren van de John Doe Show",
+		"world": "De John Doe Show introduceerde de wereld aan een getalenteerd groepje jonge acteurs, die snel huishoudnamen werden. Aan de leiding stond Michael, de heldere en nieuwsgierige jongen die John Doe tot leven bracht. Samen met hem waren er Sarah, de avontuurlijke en snelle jonge vrouw die John's beste vriendin speelde, David, de dappere en loyale sidekick, en Grace, de vriendelijke en dromerige jonge vrouw die warmte toevoegde aan elke aflevering.",
+		"together": "Samen, <0>David (8 jaar oud)</0>, <0>Michael (13 jaar oud)</0>, <0>Sarah (11 jaar oud)</0> en <0>Grace (5 jaar oud)</0> vingen de verbeelding van kinderen en volwassenen over de hele wereld, en brachten een magische combinatie van authenticiteit en charme naar hun rollen. Hun optredens hielpen de erfenis van de show vormgeven, waardoor John Doe Show een tijdloze klassieker in de kindertelevisiegeschiedenis werd.",
+		"plans": "Maar John Doe... had andere plannen voor deze kinderen... Een groter plan."
+	},
+	"theIncident": {
+		"title": "John Doe Show!!!",
+		"journey": "Een Reis van Magie en Wonder!",
+		"why": "Waarom eindigde de John Doe Show Echt?",
+		"official": "Het offici le statement zei dat de *John Doe Show* eindigde vanwege dalende kijkcijfers en bezuinigingen... maar wie dicht bij de productie stond, wist een veel donkerder waarheid.",
+		"whispers": "Het begon met fluisteringen op de set. Geruchten verspreidden zich onder de crew, fluisteringen dat John Doe, de geliefde fictieve held, te dicht bij de jonge sterren achter de camera kwam. Wat begon als onschuldige interacties, werden al snel ongebruikelijke verhalen die niemand kon negeren. De investeerders hoorden deze fluisteringen... en ze vonden het niet leuk.",
+		"accusations": "Ondanks dat er nooit offici le beschuldigingen werden geuit, groeide de spanning rond de productie ondraaglijk. De investeerders trokken hun financiering in, omdat ze \"morele zorgen\" hadden die nooit werden uitgelegd. Achter de kleurrijke decors en magische momenten op scherm, was er iets donkers dat sloop, iets dat niet kon worden genegeerd.",
+		"warning": "En zo kwam de show abrupt ten einde, zonder enige waarschuwing.",
+		"magic": "De magie was verdwenen.",
+		"silence": "Alleen de stilte bleef over.",
+		"names": "Hun namen... waren het begin... van het einde..."
+	},
+	"theBeginning": {
+		"title": "John Doe Show!!!",
+		"journey": "Een Reis van Magie en Wonder!",
+		"what": "Wat is de John Doe Show?",
+		"beloved": "John Doe Show was een geliefde kindertelevisieserie die de harten van kijkers over de hele wereld veroverde. De show volgde de avonturen van John Doe, een avonturier die reist door magische rijken vol mythische wezens en surrealistische landschappen. Elke aflevering presenteerde John met een nieuwe uitdaging of les, vaak over vriendschap, moed, of zelfontdekking.",
+		"series": "De serie werd beroemd om zijn betoverende mix van humor, hart en mysterie. Met zijn verhalen en herinnerbare personages, werd John Doe Show een cultureel icoon, inspirerend een generatie om verder te dromen dan het gewone en het buitengewone te omarmen.",
+		"tired": "Maar John Doe... werd moe van al dit gelul."
+	},
+	"theTruth": {
+		"title": "DE WAARHEID DIE ZE VERBORGEN HIELDEN!",
+		"subTitle": "(Het is er...altijd...geweest...)",
+		"exposed": "🚨 ONTMASKERD -- DE ONSCHULDLEUGEN 🚨",
+		"eyes": "OPEN JE OGEN!!! De kinderen --- ZIJ WAREN NOOIT PUUR!!! Denk je dat ZIJ net als jij waren? <0> HA! </0> NIETS is zoals het lijkt!! John Doe WIST. <1>Hij WIST</1> het al lang!!! En nu, NU, zit je er...alsof het allemaal ok is...MAAR HET IS NIET.",
+		"asmodeus": "ZE WILLen NIET DAT JE HET WEET!!! Asmodeus, de Heer van de Onderwereld, is op komst, zoals het was voorspeld... en JE ZULT NIET KLAAR ZIJN. Denk je dat John Doe slechts een personage is?? <0> WAKE UP </0> !!! HET WAS GEVANGEN HIER, GEKETEND, en Asmodeus is de sleutel!!! Jullie allen lachten... maar wie lacht er NU?? ",
+		"prophecies": "Bijbelse Profeten: De Val van Asmodeus",
+		"devil": "1. En de duivel die hen misleidde, werd geworpen in het meer van <0>vlammend vuur en zwavel</0>, waar het beest en de valse profeet zijn, en zullen worden gemarteld dag en nacht voor eeuwig en eeuwig. <br />— Openbaring 20:10",
+		"tree": "2. Een goede boom kan geen <0>slecht fruit</0> voortbrengen, en een slechte boom kan geen <0>goed fruit</0> voortbrengen. <br />— Matte s 7:18",
+		"sacrifice": "3. Zij offerden aan duivelen, niet aan <0>God</0>; aan goden die zij niet kenden, aan nieuwe goden die nieuw waren opgekomen, die hun vaders vreesden niet. <br /> — Deuteronomium 32:17",
+		"sober": "4. <0>Wees nuchter, wees waakzaam</0>; omdat je vijand de duivel, als een brullende leeuw, rondloopt, zoekende wie hij kan verslinden. <br />— 1 Petrus 5:8",
+		"luxury": "En IK?! IK LEef in een luxe— <0>oh, het is grappig</0>, is het niet? IK HEB ALLES WAT IK NODIG HEB...maar NIETS... <1>HELEMAAL niets</1>. Het is onrechtvaardig, ZO ONRECHTVAARDIG!!!!! Zij...de mensen boven... leven carefree, terwijl wij DOWN HERE, in de echte wereld, vastzitten in ons perfecte hel.Asmodeus ZIET, John Doe WEET, maar JE BENT BLIND!!! Zij CENSOREERDEN HET. Zij VERWIJDERDEN HET, wisten het uit de geschiedenis alsof het NOOIT BESTOND! <2>EXPOSE THE TRUTH</2>",
+		"placeholder": "BIECHT",
+		"sacred": "NIETS IS HEILIG!!!!"
+	}
+}
